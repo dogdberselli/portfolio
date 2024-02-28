@@ -902,7 +902,7 @@ noscript{
     color: var(--color-white);
 }
 .dp{
-    width: 40%;
+    width: 30%;
     display: flex;
     align-items: flex-start;
     justify-content:center;
@@ -1339,6 +1339,10 @@ noscript{
 .SocialHandle{
     fill: white;
     width: 60%;
+}
+.Whatsapp{
+    fill:white;
+    height: 70%;
 }
 #GmailLogo{
     height: 70%;
