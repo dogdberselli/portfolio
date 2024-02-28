@@ -484,16 +484,11 @@ var VanillaTilt = (function () {
     }
     
     if (typeof document !== "undefined") {
-      /* expose the class to window */
       window.VanillaTilt = VanillaTilt;
     
-      /**
-       * Auto load
-       */
       VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
     }
     
     return VanillaTilt;
     
     }());
-    // https://github.com/vinodjangid07

@@ -1791,7 +1791,7 @@ transition-duration: 1s;
     .logos{
         gap: 20px;
     }
-     /* https://github.com/vinodjangid07 */
+
   }
   @media screen and (max-width:300px) {
     html {
@@ -1820,7 +1820,6 @@ transition-duration: 1s;
         gap: 20px;
     }
   }
-  /* https://github.com/vinodjangid07 */
-  /* responsive code above */
+
   
   
