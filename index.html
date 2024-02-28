@@ -2,33 +2,6 @@
 <html lang="pt-BR">
 
 <head>
-  <script>
-    // Detecta a imagem principal da página
-    function detectaImagemPrincipal() {
-        var imagens = document.getElementsByTagName('img');
-        if (imagens.length > 0) {
-            return imagens[0].src; // Retorna a primeira imagem encontrada
-        } else {
-            return ''; // Retorna uma string vazia se nenhuma imagem for encontrada
-        }
-    }
-
-    // Atualiza a meta tag "og:image" com a imagem principal da página
-    function atualizaMetaTagImagem() {
-        var imagemPrincipal = detectaImagemPrincipal();
-        if (imagemPrincipal !== '') {
-            var metaTag = document.createElement('meta');
-            metaTag.setAttribute('property', 'og:image');
-            metaTag.setAttribute('content', imagemPrincipal);
-            document.getElementsByTagName('head')[0].appendChild(metaTag);
-        }
-    }
-
-    // Chama a função para atualizar a meta tag quando a página terminar de carregar
-    window.onload = function() {
-        atualizaMetaTagImagem();
-    };
-</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,6 +12,7 @@
     <meta property="og:title" content="Doglas Berselli | Portfolio">    
     <meta property="og:url" content="https://dogdberselli.github.io/portfolio/">
     <meta property="og:site_name" content="Doglas Berselli Portfolio" >
+    <meta property="og:image" content="src/webp/dogdb.jpg">
 
 
     <title>Doglas Berselli | Portfolio</title>
@@ -297,8 +271,7 @@
           </a>
 
     </footer>
-    <!-- footer ends here -->
-    
+      
 </body>
 
 <script src="main.js"></script> 
